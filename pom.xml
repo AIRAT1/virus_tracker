@@ -12,7 +12,7 @@
 	<artifactId>virus_tracker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>virus_tracker</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Virus tracker</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
