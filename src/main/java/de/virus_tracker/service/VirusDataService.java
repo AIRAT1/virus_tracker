@@ -29,6 +29,7 @@ public class VirusDataService {
         Iterable<CSVRecord> records = CSVFormat.DEFAULT.withFirstRecordAsHeader().parse(csvReader);
         for (CSVRecord record : records) {
             String provinceState = record.get("Province/State");
+            System.out.println(provinceState);
         }
     }
 }
