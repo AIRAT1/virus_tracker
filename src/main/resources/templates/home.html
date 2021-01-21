@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.wthymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Virus Tracker</title>
 </head>
 <body>
-
+    <table>
+        <tr>
+            <th>State</th>
+            <th>Country</th>
+            <th>Latest Total Cases</th>
+        </tr>
+        <tr th:each="locationStats:${locationStatistics}">
+            <td th:text="${locationStats.state}"></td>
+            <td th:text="${locationStats.country}"></td>
+            <td th:text="${locationStats.latestTotalCases}"></td>
+        </tr>
+    </table>
 </body>
 </html>
